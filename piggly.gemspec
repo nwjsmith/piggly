@@ -16,6 +16,6 @@ Gem::Specification.new do |s|
   s.bindir   = 'bin'
   s.executables  = %w[piggly]
   s.require_path = 'lib'
-  s.add_dependency 'treetop', '~> 1.4.14'
+  s.add_dependency 'treetop', '~> 1.6.11'
   s.add_dependency 'pg',      '~> 1.4.3'
 end
