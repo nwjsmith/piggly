@@ -54,8 +54,7 @@ module Piggly
         spec = (specs.is_a?(Hash) and specs[config.connection_name]) or
           raise "Database '#{config.connection_name}' is not configured in #{path}"
 
-        PGconn.connect(spec["host"], spec["port"], nil, nil,
-          spec["database"], spec["username"], spec["password"])
+        PG.connect
       end
 
       # @return [Enumerable<SkeletonProcedure>]
